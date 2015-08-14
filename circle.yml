@@ -1,6 +1,6 @@
 test:
   override:
-    - stat
+    - stat:
         parallel: true
         files:
           - test/**/*.rb
