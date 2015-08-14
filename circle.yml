@@ -1,4 +1,10 @@
 test:
-  pre:
-    - bundle exec rake db:migrate
-    - bundle exec rake db:test:prepare
+  override:
+    - stat
+        parallel: true
+        files:
+          - test/**/*.rb
+
+database:
+  override:
+    - exit 0
