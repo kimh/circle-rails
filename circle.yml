@@ -3,7 +3,7 @@ test:
     - stat:
         parallel: true
         files:
-          - **/*.rb
+          - "**/*.rb"
 
 database:
   override:
